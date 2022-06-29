@@ -1,0 +1,75 @@
+\documentclass[10pt,pdf,hyperref={unicode}]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1,T2A]{fontenc}
+\usepackage[english, russian]{babel}
+\usepackage{graphicx}
+\usetheme{Rochester}
+
+\title{\huge Практикум. Задание 4 }
+\author{Чернобай Анна}
+\date{Москва 2022}
+
+\begin{document}
+\frame[plain]{\titlepage}
+
+\section{Анализ исходных данных}
+
+\begin{frame}
+\frametitle{Количество произведенных и сломавшихся мечей для каждой из компании-поставщика за все время}
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=1.0\textwidth]{all_time.png}
+\end{figure}
+Из построенных графиков видим, что за все время работы количество произведенного оружия для обеих компаний практически одинаковое. Однако число сломанных мечей из стали компании Westeros Inс. заметно больше, чем у Harpy \& Co.
+\end{frame}
+
+\begin{frame}
+\frametitle{Количество произведенных и сломавшихся мечей для каждой компании-поставщика в каждый месяц}
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=1.0\textwidth]{monthly.png}
+\end{figure}
+Из построенных графиков видим, что число произведенного оружия за каждый месяц для обеих компаний приблизительно равно. Также обратим внимание, что со временем качество стали Harpy \& Co и Westeros Inс. улучшилось, однако у Harpy \& Co это улучшение значительнее.
+\end{frame}
+
+\begin{frame}
+\frametitle{Соотношение числа сломавшихся мечей и общего числа выкованных за каждый месяц}
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=0.8\textwidth]{monthly_percents.png}
+\end{figure}
+Из построенных графиков видим, что к последнему месяцу процент сломанных изделий снижается у обеих компаний. В целом, все также, качество продукции из стали Harpy \& Co, кажется, более надежным.
+\end{frame}
+
+\begin{frame}
+\frametitle{Количество поломок в зависимости от кузнеца для каждой компании-поставщика}
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=0.8\textwidth]{unsullen.png}
+\end{figure}
+Из построенных графиков видим, что в целом, количество поломанных мечей не сильно зависит от кузнеца для обеих компаний-поставщиков. Также можно заметить, что доля поломанных мечей больше для мечей из стали Westeros Inс.
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Количество поломанной продукции после каждого месяца экспуатации для каждой компании поставщика}
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=0.8\textwidth]{how_long_until_broken.png}
+\end{figure}
+Из построенных графиков видим, что количество мечей из стали Westeros Inс., сломавшихся уже после первого месяца эксплуатации, больше чем для Harpy \& Co. Однако с четвертого месяца эксплуатации мечи из стали Harpy \& Co, ломаются чаще (но к 4 месяцу их и осталось больше, т.к. до этого они ломались меньше)
+\end{frame}
+
+\section{Итог}
+
+\begin{frame}
+\frametitle{\insertsection}
+ Поломка мечей зависит по большей мере от качества стали.
+  
+    
+    \begin{block}{Вывод}
+    Исходя из вышенаписанного, договор, на мой взгляд, следует заключить с компанией Harpy \& Co. Сталь этой компании обладает лучшим качеством в сравнении с Westeros Inс.
+    \end{block}
+\end{frame}
+
+\end{document}
